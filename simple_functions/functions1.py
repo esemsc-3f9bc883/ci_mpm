@@ -1,6 +1,7 @@
 from functools import cache
+import math
 
-__all__ = ['my_sum', 'factorial']
+__all__ = ['my_sum', 'factorial', 'compute_sin']
 
 
 def my_sum(iterable):
@@ -13,3 +14,7 @@ def my_sum(iterable):
 @cache
 def factorial(n):
     return n * factorial(n-1) if n else 1
+
+
+def compute_sin(x):
+    return math.sin(x)
