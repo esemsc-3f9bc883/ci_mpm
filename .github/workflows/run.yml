@@ -1,0 +1,5 @@
+on:
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: 'Run this workflow'
